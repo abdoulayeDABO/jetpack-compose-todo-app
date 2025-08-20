@@ -6,6 +6,13 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.abdoulaye.todoapp.ui.theme.TodoAppTheme
 
+
+
+//@AndroidEntryPoint
+//class MyActivity : AppCompatActivity() {
+//    @Inject lateinit var viewModel: MyViewModel
+//    // ...
+//}
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -13,6 +20,8 @@ class MainActivity : ComponentActivity() {
 
         // Initialize the Graph BEFORE setContent
         Graph.provide(this)
+
+
 
         setContent {
             TodoAppTheme {
